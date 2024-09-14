@@ -1,0 +1,108 @@
+:root {
+  --gap: 3rem;
+  --color-white: #ffffff;
+  --primaty-color: #0a1128;
+  --max-width: 120rem;
+}
+/*
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", system-ui;
+}
+.section-main {
+  height: 100vh;
+  margin: 0 auto;
+}
+.section-main-background {
+  background-image: url("/assets/img/section-background.svg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.main-page {
+  margin: 0 auto;
+  font-size: 2rem;
+}
+.menu {
+  width: 100vw;
+  height: 6rem;
+  background: var(--color-white);
+  position: fixed;
+  margin: 0 auto;
+}
+.content-menu {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 var(--gap) 0 var(--gap);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-menu nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.content-menu nav ul li {
+}
+.content-menu nav ul li a {
+  text-decoration: none;
+  padding: 0 var(--gap) 0 var(--gap);
+}
+
+.intro {
+  padding: var(--gap);
+}
+
+.top3 {
+  background: var(--color-white);
+  padding: var(--gap);
+}
+
+.gallery {
+  padding: var(--gap);
+}
+
+.work {
+  background: var(--color-white);
+  padding: var(--gap);
+}
+
+.contact {
+  padding: var(--gap);
+}
