@@ -4,6 +4,7 @@
   --color-white: #ffffff;
   --primaty-color: #0a1128;
   --max-width: 120rem;
+  --max-width-small: 80rem;
   --font-title: "Montserrat", system-ui;
   --font-text: "Open Sans", system-ui;
 }
@@ -83,6 +84,10 @@ p {
   max-width: var(--max-width);
 }
 
+.section-main-max-width-small {
+  max-width: var(--max-width-small);
+}
+
 .main-page {
   margin: 0 auto;
   font-size: 2rem;
@@ -156,38 +161,40 @@ p {
 .intro {
   background: var(--color-white);
 }
-
-.intro .intro-content {
+.intro .section-intro {
+  padding: var(--gap);
+}
+.intro .section-intro .intro-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5rem 8rem;
+  padding: 5rem 8rem;
 }
 
-.intro .intro-content article > h1 {
+.intro .section-intro .intro-content article > h1 {
   text-align: center;
 }
-.intro .intro-content article > p {
+.intro .section-intro .intro-content article > p {
   text-align: center;
 }
 
 .top3 {
-  padding: var(--gap);
+  padding: 0 var(--gap) var(--gap) var(--gap);
 }
 .gallery {
   background: var(--color-white);
-  padding: var(--gap);
+  padding: 0 var(--gap) var(--gap) var(--gap);
 }
 
 .work {
-  padding: var(--gap);
+  padding: 0 var(--gap) var(--gap) var(--gap);
 }
 
 .pricing {
   background: var(--color-white);
-  padding: var(--gap);
+  padding: 0 var(--gap) var(--gap) var(--gap);
 }
 .contact {
-  padding: var(--gap);
+  padding: 0 var(--gap) var(--gap) var(--gap);
 }
