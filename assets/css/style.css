@@ -80,6 +80,10 @@ p {
   background-position: center center;
 }
 
+.section-main-background-black {
+  background: rgba(0, 0, 0, 0.2);
+}
+
 .section-main-max-width {
   max-width: var(--max-width);
 }
@@ -145,7 +149,7 @@ p {
   justify-content: center;
 }
 .logo .content-intro .content-intro-text {
-  width: 100%;
+  width: 50%;
   margin: var(--gap) 0;
 }
 .logo .content-intro .content-intro-text h1 {
