@@ -54,13 +54,22 @@ h6 {
 
 h1 {
   font-size: 6rem;
+  font-weight: 70rem;
+}
+
+.h1-margin {
+  margin: 0 0 5rem 0;
 }
 
 p {
   font-size: 2.3rem;
 }
+
+.p-margin {
+  margin: 0 0 3rem 0;
+}
 .section-main {
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
 }
 .section-main-background {
@@ -142,9 +151,22 @@ p {
 
 .top3 {
   background: var(--color-white);
-  padding: var(--gap);
 }
 
+.top3 .top3-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 8rem;
+}
+
+.top3 .top3-content article > h1 {
+  text-align: center;
+}
+.top3 .top3-content article > p {
+  text-align: center;
+}
 .gallery {
   padding: var(--gap);
 }
