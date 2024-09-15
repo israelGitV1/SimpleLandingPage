@@ -1,5 +1,6 @@
 :root {
   --gap: 3rem;
+  --gap-list: 2rem;
   --color-white: #ffffff;
   --primaty-color: #0a1128;
   --max-width: 120rem;
@@ -109,6 +110,10 @@ p {
   font-weight: 700;
   text-transform: uppercase;
 }
+.content-menu h1 a {
+  text-decoration: none;
+  color: #0a1128;
+}
 .content-menu nav ul {
   list-style: none;
   display: flex;
@@ -121,39 +126,38 @@ p {
 .content-menu nav ul li a {
   text-decoration: none;
   font-size: 1.8rem;
-  padding: 0 var(--gap) 0 var(--gap);
+  padding: 0 var(--gap-list) 0 var(--gap-list);
 }
 
-.intro {
+.logo {
   padding: 5rem 3rem 11rem 3rem;
   color: var(--color-white);
 }
-.intro .content-intro {
+.logo .content-intro {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.intro .content-intro .content-intro-text {
+.logo .content-intro .content-intro-text {
   width: 100%;
-  margin: var(--gap);
+  margin: var(--gap) 0;
 }
-.intro .content-intro .content-intro-text h1 {
+.logo .content-intro .content-intro-text h1 {
   margin: 0 0 5rem 0;
 }
-.intro .content-intro .content-intro-text p {
+.logo .content-intro .content-intro-text p {
   margin: 0 0 3rem 0;
 }
-.intro .content-intro .content-intro-img {
-  width: 150%;
-  margin: var(--gap);
+.logo .content-intro .content-intro-img {
+  width: 100%;
 }
 
-.top3 {
+.intro {
   background: var(--color-white);
 }
 
-.top3 .top3-content {
+.intro .intro-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,21 +165,29 @@ p {
   margin: 5rem 8rem;
 }
 
-.top3 .top3-content article > h1 {
+.intro .intro-content article > h1 {
   text-align: center;
 }
-.top3 .top3-content article > p {
+.intro .intro-content article > p {
   text-align: center;
-}
-.gallery {
-  padding: var(--gap);
 }
 
-.work {
+.top3 {
+  padding: var(--gap);
+}
+.gallery {
   background: var(--color-white);
   padding: var(--gap);
 }
 
+.work {
+  padding: var(--gap);
+}
+
+.pricing {
+  background: var(--color-white);
+  padding: var(--gap);
+}
 .contact {
   padding: var(--gap);
 }
