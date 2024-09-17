@@ -83,7 +83,7 @@ p {
 .section-main-background {
   background-image: url("/assets/img/section-background.svg");
   background-size: cover;
-  background-position: center center;
+  background-position: calc(0) center;
 }
 
 .section-main-background-black {
@@ -108,6 +108,7 @@ p {
   background: var(--color-white);
   position: fixed;
   margin: 0 auto;
+  z-index: 1;
 }
 .content-menu {
   max-width: 1200px;
@@ -146,8 +147,10 @@ p {
 }
 
 .logo {
-  padding: 5rem 3rem 11rem 3rem;
   color: var(--color-white);
+}
+.logo .section-logo{
+  padding: 5rem 3rem 11rem 3rem;
 }
 .logo .content-intro {
   display: flex;
