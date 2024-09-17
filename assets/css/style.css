@@ -141,6 +141,7 @@ p {
 .content-menu nav ul li a {
   text-decoration: none;
   font-size: 1.8rem;
+  color: #0a1128;
   padding: 0 var(--gap-list) 0 var(--gap-list);
 }
 
