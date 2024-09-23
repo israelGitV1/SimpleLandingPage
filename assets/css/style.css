@@ -7,7 +7,11 @@
   --max-width-small: 80rem;
   --font-title: "Montserrat", system-ui;
   --font-text: "Open Sans", system-ui;
+  --font-small: 1.8rem;
   --container-images: 36rem;
+  --spacings-medium: 3rem;
+  --spacings-large: 5rem;
+  --spacings-xlarge: 8rem;
 }
 /*
 
@@ -320,7 +324,64 @@ img {
 
 .pricing {
   background: var(--color-white);
-  padding: 0 var(--gap) var(--gap) var(--gap);
+}
+
+.pricing h2 {
+  text-transform: uppercase;
+  padding-bottom: var(--spacings-large);
+}
+.pricing p {
+  padding-bottom: var(--spacings-medium);
+}
+
+.section-content {
+  padding: var(--spacings-medium);
+}
+
+.text-container {
+  text-align: center;
+  padding: var(--spacings-large) var(--spacings-xlarge);
+  max-width: var(--max-width-small);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.responsive-table {
+  overflow-x: auto;
+}
+
+.responsive-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 600px;
+}
+
+.responsive-table table caption {
+  text-align: left;
+  caption-side: top;
+  margin: 1rem 0;
+  font-size: var(--font-small);
+  font-style: italic;
+}
+.responsive-table table th,
+td {
+  border: 1px solid #eee;
+  padding: 5px 10px;
+  text-align: left;
+  font-weight: 500;
+  
+}
+.responsive-table table th {
+  background: #eee;
+  font-weight: 800;
+}
+
+.article {
+  width: 100%;
 }
 .contact {
   padding: 0 var(--gap) var(--gap) var(--gap);
