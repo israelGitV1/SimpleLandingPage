@@ -84,7 +84,6 @@ p {
 .section-main-background {
   background-image: url("/assets/img/section-background.svg");
   background-size: cover;
-  background-position: calc(0) center;
 }
 
 .section-main-background-black {
@@ -211,24 +210,19 @@ p {
   text-transform: uppercase;
   margin: 0 0 2rem 0;
 }
-.top3 .section-top3 .content-top3 .content-grid {
+.content-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: var(--gap);
   list-style: circle;
 }
 
-.top3 .section-top3 .content-top3 .content-grid h3 {
+.content-grid h3 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-.top3
-  .section-top3
-  .content-top3
-  .content-grid
-  article:nth-child(1)
-  h3::before {
+.content-grid article:nth-child(1) h3::before {
   content: "1";
   display: block;
   font-size: 8rem;
@@ -237,12 +231,7 @@ p {
   transform: rotate(5deg);
   margin: 0 2rem 0 1rem;
 }
-.top3
-  .section-top3
-  .content-top3
-  .content-grid
-  article:nth-child(2)
-  h3::before {
+.content-grid article:nth-child(2) h3::before {
   content: "2";
   display: block;
   font-size: 8rem;
@@ -252,12 +241,7 @@ p {
   margin: 0 2rem 0 1rem;
 }
 
-.top3
-  .section-top3
-  .content-top3
-  .content-grid
-  article:nth-child(3)
-  h3::before {
+.content-grid article:nth-child(3) h3::before {
   content: "3";
   display: block;
   font-size: 8rem;
@@ -317,6 +301,20 @@ img {
 
 .work {
   padding: 0 var(--gap) var(--gap) var(--gap);
+  color: var(--color-white);
+}
+
+.work .section-work {
+  padding: 8rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-work h2 {
+  text-transform: uppercase;
+  padding-bottom: 8rem;
 }
 
 .pricing {
