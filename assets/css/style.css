@@ -486,12 +486,16 @@ td {
   border-top: 0.1rem solid rgb(0, 0, 0, 0.1);
 }
 
-.created-by p {
-  margin: 0 0 var(--spacings-small);
+.created-by,
+p {
+  font-family: var(--font-title);
+  font-style: italic;
+  font-weight: 700;
+  margin: 0 0 var(--spacings-medium) 0;
 }
 
 .created-by a {
-  text-decoration: none;
+  text-decoration: double;
   color: inherit;
 }
 
