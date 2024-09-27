@@ -3,12 +3,15 @@
   --gap-list: 2rem;
   --color-white: #ffffff;
   --primaty-color: #0a1128;
+  --dark-gray-color: #2e3038;
   --max-width: 120rem;
   --max-width-small: 80rem;
   --font-title: "Montserrat", system-ui;
   --font-text: "Open Sans", system-ui;
   --font-small: 1.8rem;
+  --font-xsmall: 1.4rem;
   --container-images: 36rem;
+  --spacings-small: 2rem;
   --spacings-medium: 3rem;
   --spacings-large: 5rem;
   --spacings-xlarge: 8rem;
@@ -473,4 +476,54 @@ td {
   font-size: 3rem;
   width: 100%;
   padding: 1.5rem 2rem;
+}
+
+.created-by {
+  font-size: var(--font-xsmall);
+  padding: var(--spacings-large) var(--spacings-medium) var(--spacings-medium)
+    var(--spacings-medium);
+  text-align: center;
+  border-top: 0.1rem solid rgb(0, 0, 0, 0.1);
+}
+
+.created-by p {
+  margin: 0 0 var(--spacings-small);
+}
+
+.created-by a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.back-to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: var(--spacings-small);
+  right: var(--spacings-small);
+  z-index: 1;
+  background: var(--primaty-color);
+  width: var(--spacings-large);
+  height: var(--spacings-large);
+  border-radius: 50%;
+  color: var(--color-white);
+  opacity: 0.3;
+  border: 1px solid var(--dark-gray-color);
+  pointer-events: painted;
+  cursor: pointer;
+  transition: all 600ms ease-in-out;
+}
+
+.back-to-top::after {
+  position: absolute;
+  content: "";
+  width: calc(var(--spacings-large) / 4);
+  height: calc(var(--spacings-large) / 4);
+  border-width: 0.5rem;
+  border-style: solid;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  top: 1.8rem;
+  transform: rotate(135deg);
 }
