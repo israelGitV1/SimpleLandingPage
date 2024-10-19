@@ -113,6 +113,24 @@ p {
   margin: 0 auto;
   font-size: 2rem;
 }
+
+.close-menu {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  z-index: 101;
+  top: var(--spacings-small);
+  right: var(--spacings-small);
+  appearance: none;
+  width: calc(var(--spacings-xlarge) / 2);
+  height: calc(var(--spacings-xlarge) / 2);
+  font-size: var(--spacings-medium);
+  background: var(--primaty-color);
+  color: var(--color-white);
+  outline: none;
+  cursor: pointer;
+}
 .menu {
   width: 100vw;
   height: 6rem;
@@ -120,6 +138,25 @@ p {
   position: fixed;
   margin: 0 auto;
   z-index: 1;
+  visibility: visible;
+}
+.menuSmall {
+  width: 100vw;
+  height: 6rem;
+  background: var(--color-white);
+  position: fixed;
+  margin: 0 auto;
+  z-index: 1;
+  visibility: visible;
+}
+.menu {
+  width: 100vw;
+  height: 6rem;
+  background: var(--color-white);
+  position: fixed;
+  margin: 0 auto;
+  z-index: 1;
+  visibility: visible;
 }
 .content-menu {
   max-width: 1200px;
@@ -530,6 +567,68 @@ td {
 }
 
 @media (max-width: 800px) {
+  .close-menu {
+    display: flex;
+  }
+  .close-menu:not(:checked)::after {
+    content: "☰";
+  }
+  .close-menu:checked::after {
+    content: "x";
+  }
+  .close-menu:hover,
+  .close-menu:active,
+  .close-menu::after,
+  .close-menu::before {
+    color: #fff;
+  }
+
+  .menu {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menuSmall {
+    opacity: 1;
+    visibility: hidden;
+    width: 50%;
+    height: 50%;
+    min-height: 60rem;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 8rem;
+    border: 2px, white;
+  }
+
+  .content-menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--primaty-color);
+  }
+
+  .content-menu h1 {
+    margin-bottom: var(--spacings-small);
+  }
+
+  .content-menu h1 a {
+    color: var(--color-white);
+  }
+
+  .content-menu nav ul {
+    flex-direction: column;
+  }
+  .content-menu nav ul li {
+    margin-bottom: var(--spacings-small);
+  }
+  .content-menu nav ul li a {
+    color: var(--color-white);
+  }
+  .content-menu nav ul li a:hover {
+    background-color: var(--color-white);
+    color: var(--primaty-color);
+  }
+
   h1,
   h2 {
     font-size: var(--font-medium);
